@@ -7,6 +7,9 @@
 
 'use strict';
 
+var set = require('set-object');
+var get = require('get-value');
+
 /**
  * Expose `storage`
  */
@@ -27,6 +30,9 @@ module.exports = Storage;
  */
 
 function Storage(cache) {
+  if (!(this instanceof Storage)) {
+    return new Storage(cache);
+  }
   this.cache = cache || {};
 }
 
@@ -39,7 +45,7 @@ function Storage(cache) {
  */
 
 Storage.prototype.set = function(key, value) {
-  this.cache[key] = value;
+  set(this.cache, key, value);
   return this;
 };
 
@@ -52,5 +58,5 @@ Storage.prototype.set = function(key, value) {
  */
 
 Storage.prototype.get = function(key) {
-  return this.cache[key];
+  return get(this.cache, key);
 };

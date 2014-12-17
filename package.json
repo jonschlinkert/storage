@@ -1,0 +1,33 @@
+{
+  "name": "storage",
+  "description": "Basic object store for node.js",
+  "version": "0.2.0",
+  "homepage": "https://github.com/jonschlinkert/storage",
+  "author": {
+    "name": "Jon Schlinkert",
+    "url": "https://github.com/jonschlinkert"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jonschlinkert/storage.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jonschlinkert/storage/issues"
+  },
+  "license": {
+    "type": "MIT",
+    "url": "https://github.com/jonschlinkert/storage/blob/master/LICENSE-MIT"
+  },
+  "main": "index.js",
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "mocha -R spec"
+  },
+  "devDependencies": {
+    "mocha": "*",
+    "should": "*"
+  },
+  "keywords": []
+}

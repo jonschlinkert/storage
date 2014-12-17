@@ -32,6 +32,19 @@ var Storage = require('storage');
 var storage = new Storage();
 ```
 
+### [.set](index.js#L41)
+
+* `key` **{String}**    
+* `value` **{*}**    
+
+Assign `value` to `key`.
+
+### [.get](index.js#L54)
+
+* `key` **{String}**    
+* `returns` **{*}**: Returns the stored value of `key`  
+
+Get the stored vale of `key`.
 
 ## Contributing
 Pull requests and stars are always welcome. For bugs and feature requests, [please create an issue](https://github.com/jonschlinkert/storage/issues)

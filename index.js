@@ -30,10 +30,26 @@ function Storage(cache) {
   this.cache = cache || {};
 }
 
+/**
+ * Assign `value` to `key`.
+ *
+ * @param {String} `key`
+ * @param {*} `value`
+ * @api public
+ */
+
 Storage.prototype.set = function(key, value) {
   this.cache[key] = value;
   return this;
 };
+
+/**
+ * Get the stored vale of `key`.
+ *
+ * @param {String} `key`
+ * @return {*} Returns the stored value of `key`
+ * @api public
+ */
 
 Storage.prototype.get = function(key) {
   return this.cache[key];

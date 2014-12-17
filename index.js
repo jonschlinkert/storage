@@ -30,6 +30,9 @@ module.exports = Storage;
  */
 
 function Storage(cache) {
+  if (!(this instanceof Storage)) {
+    return new Storage(cache);
+  }
   this.cache = cache || {};
 }
 

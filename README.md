@@ -2,7 +2,6 @@
 
 > Basic object store for node.js
 
-## Install
 ## Install with [npm](npmjs.org)
 
 ```bash
@@ -22,6 +21,16 @@ var storage = require('storage');
 ```
 
 ## API
+### [Storage](index.js#L29)
+
+Create a new instance of `Storage`, optionally passing a default `cache` object to initialize with.
+
+* `cache` **{Object}**    
+
+```js
+var Storage = require('storage');
+var storage = new Storage();
+```
 
 
 ## Contributing

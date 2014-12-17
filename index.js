@@ -13,6 +13,19 @@
 
 module.exports = Storage;
 
+/**
+ * Create a new instance of `Storage`, optionally
+ * passing a default `cache` object to initialize with.
+ *
+ * ```js
+ * var Storage = require('storage');
+ * var storage = new Storage();
+ * ```
+ *
+ * @param {Object} `cache`
+ * @api public
+ */
+
 function Storage(cache) {
   this.cache = cache || {};
 }
